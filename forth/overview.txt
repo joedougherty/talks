@@ -1,0 +1,93 @@
+SECTION 1 (5 mins):
+==================
+
+1.1:
+---
+Introduce Pat:
+
+    + a bit of Python experience
+        + dict/while loop/stack/basic string ops
+    + wants to get started implementing lang
+    + *but* no previous experience implementing langs
+
+1.2:
+---
+What constitutes a programming language?
+
+I'll use this broad definition from SICP:
+
+"""
+    A powerful programming language is more than just a means for instructing a computer to perform tasks. 
+    The language also serves as a framework within which we organize our ideas about processes. 
+    Thus, when we describe a language, we should pay particular attention to the means that the language provides 
+    for combining simple ideas to form more complex ideas. Every powerful language has three mechanisms for accomplishing this:
+
+        + primitive expressions, which represent the simplest entities the language is concerned with
+        + means of combination, by which compound elements are built from simpler ones, and
+        + means of abstraction, by which compound elements can be named and manipulated as units. 
+"""
+[https://sarabander.github.io/sicp/html/1_002e1.xhtml#g_t1_002e1]
+
+1.3:
+---
+
+I'd like to introduce you to a lang whose execution model is:
+
+    + powerful enough to meet the "what is a programming lang" reqs
+    + simple/straightforward enough to be implemented with a few fundamental Python constructs
+
+1.4:
+---
+
+FORTH "Biographical" Details:
+
+Who: 
+    Chuck Moore
+
+When:
+
+
+Why:
+
+
+Where's it used:
+
+
+SECTION 2 (5 mins):
+==================
+
+A Crash Course in FORTH:
+
+FORTH is probably pretty different from languages you might be used to.
+
++ postfix notation
++ there aren't really "functions" -- nothing to "return" from
++ no real "scope" to speak of
++ every piece of input is either a word or a piece of data that gets pushed onto the stack
+
+[http://slides.com/modusjonens/deck#/4 - http://slides.com/modusjonens/deck#/7]
+
+
+SECTION 3 (5 mins):
+==================
+
+The FORTH execution model:
+
+[https://www.forth.com/starting-forth/1-forth-stacks-dictionary/] section "The Dictionary"
+
+
+
+SECTION 4 (5 mins):
+==================
+
+How can we implement this "machine" in Python?
+
+Parts:
+-----
+
+Stack:
+(https://interactivepython.org/runestone/static/pythonds/BasicDS/ImplementingaStackinPython.html)
+
+Dictionary: just a plain old dictionary!
+
+
